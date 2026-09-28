@@ -3,179 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Yuefu 隐私政策">
-  <title>Yuefu 隐私政策 | Privacy Policy</title>
+  <meta name="description" content="元乐府 隐私政策">
+  <title>元乐府 隐私政策</title>
   <style>
     :root {
-      --bg: #f6f8fb;
-      --card: #ffffff;
-      --text: #1f2937;
-      --muted: #667085;
-      --line: #e5e7eb;
-      --accent: #2563eb;
-      --accent-soft: #eff6ff;
-      --warning: #92400e;
-      --warning-bg: #fffbeb;
-      --warning-line: #fde68a;
+      --bg:#f5f7fb; --card:#fff; --text:#1f2937; --muted:#667085;
+      --line:#e5e7eb; --accent:#1d4ed8; --soft:#eff6ff;
     }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
     body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
-                   "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
-      line-height: 1.85;
+      margin:0; background:var(--bg); color:var(--text);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",
+      "Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif; line-height:1.9;
     }
-    .hero {
-      background: linear-gradient(135deg, #0f172a, #1d4ed8);
-      color: white;
-      padding: 64px 20px 54px;
+    header {
+      background:linear-gradient(135deg,#111827,#1d4ed8);
+      color:#fff; padding:64px 20px 52px;
     }
-    .hero-inner, .layout {
-      max-width: 1040px;
-      margin: 0 auto;
-    }
-    .eyebrow {
-      font-size: 14px;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      opacity: .8;
-      margin-bottom: 10px;
-    }
-    h1 {
-      margin: 0;
-      font-size: clamp(34px, 6vw, 52px);
-      line-height: 1.15;
-    }
-    .subtitle {
-      margin: 14px 0 0;
-      font-size: 18px;
-      opacity: .88;
-    }
-    .meta {
-      margin-top: 24px;
-      display: flex;
-      gap: 10px 22px;
-      flex-wrap: wrap;
-      font-size: 14px;
-      opacity: .9;
-    }
+    .inner,.layout { max-width:1040px; margin:0 auto; }
+    .brand { font-size:14px; opacity:.78; letter-spacing:.08em; text-transform:uppercase; margin-bottom:10px; }
+    h1 { margin:0; font-size:clamp(34px,6vw,52px); line-height:1.2; }
+    .subtitle { margin-top:14px; font-size:17px; opacity:.88; }
     .layout {
-      padding: 30px 20px 64px;
-      display: grid;
-      grid-template-columns: 240px minmax(0, 1fr);
-      gap: 26px;
-      align-items: start;
+      display:grid; grid-template-columns:255px minmax(0,1fr);
+      gap:26px; padding:30px 20px 64px; align-items:start;
     }
-    nav, .card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      box-shadow: 0 8px 28px rgba(15, 23, 42, .05);
+    nav,.card {
+      background:var(--card); border:1px solid var(--line);
+      border-radius:16px; box-shadow:0 8px 28px rgba(15,23,42,.05);
     }
-    nav {
-      position: sticky;
-      top: 18px;
-      padding: 18px;
-    }
-    nav strong {
-      display: block;
-      margin-bottom: 10px;
-      font-size: 14px;
-    }
+    nav { position:sticky; top:18px; padding:18px; }
+    nav strong { display:block; margin-bottom:10px; font-size:14px; }
     nav a {
-      display: block;
-      color: #475467;
-      text-decoration: none;
-      padding: 7px 8px;
-      border-radius: 8px;
-      font-size: 14px;
+      display:block; text-decoration:none; color:#475467;
+      padding:8px 9px; border-radius:8px; font-size:14px;
     }
-    nav a:hover {
-      color: var(--accent);
-      background: var(--accent-soft);
-    }
-    main { min-width: 0; }
-    .notice {
-      background: var(--warning-bg);
-      border: 1px solid var(--warning-line);
-      color: var(--warning);
-      border-radius: 14px;
-      padding: 16px 18px;
-      margin-bottom: 20px;
-    }
-    .notice strong { display: block; margin-bottom: 4px; }
-    .card {
-      padding: 28px 30px;
-      margin-bottom: 20px;
-    }
-    h2 {
-      margin: 0 0 16px;
-      font-size: 24px;
-      line-height: 1.35;
-      scroll-margin-top: 24px;
-    }
-    h3 {
-      margin: 24px 0 10px;
-      font-size: 18px;
-    }
-    p { margin: 10px 0; }
-    ul { padding-left: 22px; }
-    .toc-mobile { display: none; }
-    .placeholder {
-      background: #fff7ed;
-      color: #9a3412;
-      border: 1px dashed #fdba74;
-      border-radius: 6px;
-      padding: 1px 6px;
-      white-space: normal;
-    }
-    .optional {
-      color: var(--muted);
-      font-size: 14px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 14px 0;
-      font-size: 14px;
-    }
-    th, td {
-      text-align: left;
-      vertical-align: top;
-      border: 1px solid var(--line);
-      padding: 11px 12px;
-    }
-    th { background: #f8fafc; }
-    a { color: var(--accent); }
-    footer {
-      text-align: center;
-      color: var(--muted);
-      font-size: 13px;
-      padding: 0 20px 40px;
-    }
-    @media (max-width: 800px) {
-      .hero { padding-top: 44px; }
-      .layout { grid-template-columns: 1fr; }
-      nav { display: none; }
-      .card { padding: 22px 20px; }
-      table { display: block; overflow-x: auto; }
+    nav a:hover { color:var(--accent); background:var(--soft); }
+    main { min-width:0; }
+    .card { padding:28px 30px; margin-bottom:20px; }
+    h2 { margin:0 0 16px; font-size:24px; line-height:1.45; scroll-margin-top:24px; }
+    p { margin:10px 0; }
+    .contact { margin-top:18px; padding:16px 18px; background:var(--soft); border-radius:12px; }
+    a { color:var(--accent); }
+    footer { text-align:center; color:var(--muted); font-size:13px; padding:0 20px 40px; }
+    @media (max-width:820px) {
+      .layout { grid-template-columns:1fr; }
+      nav { display:none; }
+      .card { padding:22px 20px; }
+      header { padding-top:44px; }
     }
   </style>
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-inner">
-      <div class="eyebrow">Yuefu · Privacy Policy</div>
-      <h1>Yuefu 隐私政策</h1>
-      <p class="subtitle">我们重视您的个人信息和隐私保护。</p>
-      <div class="meta">
-        <span>更新日期：2026 年 9 月 27 日</span>
-        <span>生效日期：<span class="placeholder">待确认</span></span>
-        <span>版本：示例草稿</span>
-      </div>
+  <header>
+    <div class="inner">
+      <div class="brand">Yuefu Translation App · Privacy Policy</div>
+      <h1>元乐府 隐私政策</h1>
+      <div class="subtitle">昆山元乐府科技有限公司</div>
     </div>
   </header>
 
@@ -183,252 +68,62 @@
     <nav aria-label="目录">
       <strong>目录</strong>
       <a href="#intro">政策说明</a>
-      <a href="#collect">一、信息的收集与使用</a>
-      <a href="#storage">二、信息的保存</a>
-      <a href="#cookies">三、Cookies</a>
-      <a href="#sharing">四、共享、转让与披露</a>
-      <a href="#sdk">五、第三方 SDK</a>
-      <a href="#security">六、信息安全</a>
-      <a href="#rights">七、您的权利</a>
-      <a href="#minors">八、未成年人保护</a>
-      <a href="#updates">九、政策更新</a>
-      <a href="#contact">十、联系我们</a>
+      <a href="#s1">一、我们如何收集和使用您的个人信息</a>
+<a href="#s2">二、我们如何存储和保护您的个人信息</a>
+<a href="#s3">三、我们如何共享、转让、公开披露您的个人信息</a>
+<a href="#s4">四、我们如何使用 Cookie 和其他追踪技术</a>
     </nav>
 
     <main>
-      <div class="notice">
-        <strong>示例草稿，请勿直接用于正式提交</strong>
-        本页面根据现有隐私政策模板制作。橙色“待确认”内容，以及注册、实名认证、权限、SDK、支付等条款，
-        必须根据 Yuefu App 的真实功能和实际数据处理行为确认、修改或删除后，才能作为正式隐私政策使用。
-      </div>
-
       <section class="card" id="intro">
         <h2>政策说明</h2>
-        <p>
-          <span class="placeholder">【请填写公司/运营主体全称】</span>
-          （注册地址：<span class="placeholder">【请填写注册地址】</span>，以下简称“我们”）
-          是移动应用程序“Yuefu”（以下简称“Yuefu”）的运营者。
-          我们非常重视保护用户（以下简称“您”）的个人信息和隐私。
-        </p>
-        <p>
-          本隐私政策用于说明我们在您使用 Yuefu 时如何收集、使用、保存、共享和保护您的个人信息，
-          以及您如何访问、更正、删除相关信息、撤回授权或行使其他隐私权利。
-        </p>
-        <p>
-          请您在使用 Yuefu 前认真阅读并充分理解本政策。涉及敏感个人信息、设备权限或第三方服务时，
-          我们将按照适用法律法规及产品实际情况向您进行说明，并在必要时取得您的授权同意。
-        </p>
+        <p>欢迎您访问我们的产品。 元乐府（包括App等产品提供的服务，以下简称“产品和服务”）是由 昆山元乐府科技有限公司 （以下简称“我们”）开发并运营的。 确保用户的数据安全和隐私保护是我们的首要任务， 本隐私政策载明了您访问和使用我们的产品和服务时所收集的数据及其处理方式。</p>
+<p>请您在继续使用我们的产品前务必认真仔细阅读并确认充分理解本隐私政策全部规则和要点， 一旦您选择使用，即视为您同意本隐私政策的全部内容，同意我们按其收集和使用您的相关信息。 如您在在阅读过程中，对本政策有任何疑问，可联系我们的客服咨询， 请通过 <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e892809181b7d9a8d9dedbc68b8785">[email&#160;protected]</a> 或产品中的反馈方式与我们取得联系。</p>
+<p>如您不同意相关协议或其中的任何条款的，您应停止使用我们的产品和服务。 本隐私政策帮助您了解以下内容： 一、我们如何收集和使用您的个人信息；</p>
+<p>二、我们如何存储和保护您的个人信息；</p>
+<p>三、我们如何共享、转让、公开披露您的个人信息；</p>
+<p>四、我们如何使用 Cookie 和其他追踪技术；</p>
+        <div class="contact">联系邮箱：
+          <a href="/cdn-cgi/l/email-protection#dda7b5a4b482ec9decebeef3beb2b0"><span class="__cf_email__" data-cfemail="2852405141771968191e1b064b4745">[email&#160;protected]</span></a>
+        </div>
       </section>
+      
+    <section class="card" id="s1">
+      <h2>一、我们如何收集和使用您的个人信息</h2>
+      <p>个人信息是指以电子或者其他方式记录的能够单独或者与其他信息， 结合识别特定自然人身份或者反映特定自然人活动情况的各种信息。 我们根据《中华人民共和国网络安全法》和《信息安全技术个人信息安全规范》（GB/T 35273-2017） 以及其它相关法律法规的要求，并严格遵循正当、合法、必要的原则， 出于您使用我们提供的服务和/或产品等过程中而收集和使用您的个人信息，包括但不限于电话号码、电子邮箱地址等。</p>
+<p>为接受我们全面的产品服务，您应首先注册一个用户账号，我们将通过它记录相关的数据。 您所提供的所有信息均来自于您本人在注册时提供的数据。 您准备使用的账户名、密码、您本人的联系方式， 我们可能通过发短信或者邮件的方式来验证您的身份是否有效。</p>
+    </section>
 
-      <section class="card" id="collect">
-        <h2>一、我们如何收集和使用您的个人信息</h2>
+    <section class="card" id="s2">
+      <h2>二、我们如何存储和保护您的个人信息</h2>
+      <p>作为一般规则，我们仅在实现信息收集目的所需的时间内保留您的个人信息。 我们会在对于管理与您之间的关系严格必要的时间内保留您的个人信息 （例如，当您开立帐户，从我们的产品获取服务时）。 出于遵守法律义务或为证明某项权利或合同满足适用的诉讼时效要求的目的， 我们可能需要在上述期限到期后保留您存档的个人信息，并且无法按您的要求删除。</p>
+<p>当您的个人信息对于我们的法定义务或法定时效对应的目的或档案不再必要时， 我们确保将其完全删除或匿名化。 我们使用符合业界标准的安全防护措施保护您提供的个人信息，并加密其中的关键数据， 防止其遭到未经授权访问、公开披露、使用、修改、损坏或丢失。 我们会采取一切合理可行的措施，保护您的个人信息。</p>
+<p>我们会使用加密技术确保数据的保密性；</p>
+<p>我们会使用受信赖的保护机制防止数据遭到恶意攻击。</p>
+    </section>
 
-        <h3>1. 账户注册与登录</h3>
-        <p>
-          如 Yuefu 提供账户注册或登录功能，我们可能需要收集
-          <span class="placeholder">【手机号 / 邮箱 / 登录凭证 / 其他实际信息】</span>，
-          用于创建账户、身份验证及保障账户安全。
-        </p>
-        <p class="optional">如果 Yuefu 不提供账户系统，请删除本条。</p>
+    <section class="card" id="s3">
+      <h2>三、我们如何共享、转让、公开披露您的个人信息</h2>
+      <p>在管理我们的日常业务活动所需要时，为追求合法利益以更好地服务客户， 我们将合规且恰当的使用您的个人信息。 出于对业务和各个方面的综合考虑， 我们仅自身使用这些数据，不与任何第三方分享。 我们可能会根据法律法规规定，或按政府主管部门的强制性要求，对外共享您的个人信息。 在符合法律法规的前提下，当我们收到上述披露信息的请求时，我们会要求必须出具与之相应的法律文件，如传票或调查函。</p>
+<p>我们坚信，对于要求我们提供的信息，应该在法律允许的范围内尽可能保持透明。 在以下情形中，共享、转让、公开披露您的个人信息无需事先征得您的授权同意： </p>
+<p>1、与国家安全、国防安全直接相关的；</p>
+<p>2、与犯罪侦查、起诉、审判和判决执行等直接相关的；</p>
+<p>3、出于维护您或其他个人的生命、财产等重大合法权益但又很难得到本人同意的；</p>
+<p>4、您自行向社会公众公开的个人信息；</p>
+<p>5、从合法公开披露的信息中收集个人信息的，如合法的新闻报道、政府信息公开等渠道。 6、根据个人信息主体要求签订和履行合同所必需的；</p>
+<p>7、用于维护所提供的产品或服务的安全稳定运行所必需的，例如发现、处置产品或服务的故障；</p>
+<p>8、法律法规规定的其他情形。</p>
+    </section>
 
-        <h3>2. 提供核心服务</h3>
-        <p>
-          为保障应用正常运行、诊断故障并提升服务体验，我们可能根据实际功能处理
-          <span class="placeholder">【设备型号、操作系统版本、设备标识符、IP 地址、日志信息等——请按实际情况确认】</span>。
-        </p>
-
-        <h3>3. 实名认证</h3>
-        <p>
-          如 Yuefu 依法或因具体功能需要提供实名认证，我们可能处理
-          <span class="placeholder">【姓名、证件类型、证件号码等——仅在实际存在时保留】</span>，
-          并可能通过依法合规的认证服务提供方完成身份核验。
-        </p>
-        <p class="optional">如果没有实名认证，请删除本条。</p>
-
-        <h3>4. 设备权限</h3>
-        <p>
-          我们不会无故开启您的设备权限。仅当具体功能确有需要时，应用会向您请求相应权限。
-          您可以拒绝授权，也可以在设备系统设置中关闭已授予的权限。
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>权限</th>
-              <th>使用目的</th>
-              <th>是否可关闭</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>网络访问</td>
-              <td><span class="placeholder">【连接服务器、获取在线内容等，请确认】</span></td>
-              <td>视系统及核心功能而定</td>
-            </tr>
-            <tr>
-              <td><span class="placeholder">【相机/相册】</span></td>
-              <td><span class="placeholder">【请填写实际用途；没有则删除】</span></td>
-              <td>可</td>
-            </tr>
-            <tr>
-              <td><span class="placeholder">【麦克风】</span></td>
-              <td><span class="placeholder">【请填写实际用途；没有则删除】</span></td>
-              <td>可</td>
-            </tr>
-            <tr>
-              <td><span class="placeholder">【位置】</span></td>
-              <td><span class="placeholder">【请填写实际用途；没有则删除】</span></td>
-              <td>可</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>5. 支付或充值</h3>
-        <p>
-          如 Yuefu 提供付费功能，与交易相关的信息可能由应用商店或支付服务提供方处理。
-          我们实际接收和保存的数据类型为
-          <span class="placeholder">【请根据实际支付流程填写；没有支付功能则删除本条】</span>。
-        </p>
-
-        <h3>6. 信息使用规则</h3>
-        <p>
-          我们仅会在本政策所说明的目的和必要范围内使用个人信息。
-          如需将信息用于与原目的不直接相关的新用途，我们将根据适用法律法规另行告知并在必要时取得您的同意。
-        </p>
-      </section>
-
-      <section class="card" id="storage">
-        <h2>二、我们如何保存您的个人信息</h2>
-        <p>
-          我们将在实现本政策所述目的所必需的最短期限内保存您的个人信息，
-          法律法规另有要求的除外。保存期限届满后，我们将根据适用要求删除或匿名化处理相关信息。
-        </p>
-        <p>
-          数据存储地点及跨境处理情况：
-          <span class="placeholder">【请根据 Yuefu 实际服务器位置、业务地区及跨境情况填写】</span>。
-        </p>
-      </section>
-
-      <section class="card" id="cookies">
-        <h2>三、我们如何使用 Cookies 和同类技术</h2>
-        <p>
-          <span class="placeholder">【请确认 Yuefu 或其网页/第三方服务是否使用 Cookies、SDK 本地存储或类似技术】</span>。
-          如使用，我们将说明其用途，例如保障服务安全、保存必要设置、分析服务运行情况等。
-        </p>
-        <p class="optional">如果 App 及其相关网页完全不使用 Cookies，可改写为明确的不使用说明。</p>
-      </section>
-
-      <section class="card" id="sharing">
-        <h2>四、我们如何共享、转让、公开披露您的个人信息</h2>
-        <h3>1. 委托处理与共享</h3>
-        <p>
-          在提供服务确有必要时，我们可能委托依法合规的服务提供方处理必要信息，
-          或在取得授权、履行法定义务等适用情形下共享必要信息。
-          实际合作方及数据类型请参见下方“第三方 SDK”部分。
-        </p>
-        <h3>2. 转让</h3>
-        <p>
-          原则上我们不会转让您的个人信息。如发生合并、收购、资产转让等导致个人信息控制主体发生变化的情况，
-          我们将按照适用法律法规处理，并要求新的信息处理主体继续承担相应的保护义务。
-        </p>
-        <h3>3. 公开披露</h3>
-        <p>
-          除依法依规或获得相应授权的情形外，我们不会公开披露您的个人信息。
-        </p>
-      </section>
-
-      <section class="card" id="sdk">
-        <h2>五、第三方产品、服务与 SDK</h2>
-        <p>
-          Yuefu 可能接入第三方 SDK 或服务以实现特定功能。正式版本应逐项列出实际接入的 SDK，
-          并说明其提供方、使用目的、处理的数据以及隐私政策链接。
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>SDK / 服务</th>
-              <th>提供方</th>
-              <th>使用目的</th>
-              <th>处理的信息</th>
-              <th>隐私政策</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><span class="placeholder">【待填写】</span></td>
-              <td><span class="placeholder">【待填写】</span></td>
-              <td><span class="placeholder">【统计/登录/推送/支付等】</span></td>
-              <td><span class="placeholder">【待填写】</span></td>
-              <td><span class="placeholder">【URL】</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
-      <section class="card" id="security">
-        <h2>六、我们如何保护您的个人信息</h2>
-        <p>
-          我们重视个人信息安全，并将根据业务实际情况采取合理的技术和管理措施，
-          例如访问控制、传输或存储保护、安全审计等，以降低未经授权访问、披露、篡改、丢失或毁坏的风险。
-        </p>
-        <p>
-          如发生个人信息安全事件，我们将按照适用法律法规采取处置措施，并在依法需要时向用户及有关主管部门进行通知或报告。
-        </p>
-      </section>
-
-      <section class="card" id="rights">
-        <h2>七、您如何管理您的个人信息</h2>
-        <p>
-          根据适用法律法规及 Yuefu 的具体功能，您可以通过产品内功能或联系我们，
-          请求访问、更正、删除您的个人信息，撤回相关授权，或申请注销账户。
-        </p>
-        <h3>账户注销与数据删除</h3>
-        <p>
-          注销入口：
-          <span class="placeholder">【例如：Yuefu → 设置 → 账号与安全 → 注销账号；请按实际产品填写】</span>。
-        </p>
-        <p>
-          如果应用内暂未提供相应入口，您可以通过本政策“联系我们”中的方式提出请求。
-          在验证您的身份并确认请求合法有效后，我们将按照适用法律法规处理。
-        </p>
-      </section>
-
-      <section class="card" id="minors">
-        <h2>八、我们如何处理未成年人的个人信息</h2>
-        <p>
-          我们重视未成年人的个人信息保护。对于涉及未成年人的服务和个人信息处理活动，
-          我们将根据产品面向的实际用户群体以及适用法律法规采取相应保护措施。
-        </p>
-        <p>
-          <span class="placeholder">【请确认 Yuefu 是否面向儿童/未成年人，以及是否存在年龄验证、监护人同意等机制】</span>。
-        </p>
-      </section>
-
-      <section class="card" id="updates">
-        <h2>九、本隐私政策如何更新</h2>
-        <p>
-          我们可能根据产品功能、业务模式、法律法规或监管要求的变化更新本隐私政策。
-          更新后的政策将在本页面公布；如变更对您的权利产生重大影响，我们将根据适用要求以适当方式进行提示。
-        </p>
-      </section>
-
-      <section class="card" id="contact">
-        <h2>十、如何联系我们</h2>
-        <p>如果您对本政策或个人信息保护有任何问题、意见或请求，可以通过以下方式联系我们：</p>
-        <p>
-          运营主体：<span class="placeholder">【请填写公司全称】</span><br>
-          联系邮箱：<span class="placeholder">【请填写隐私/客服邮箱】</span><br>
-          联系电话：<span class="placeholder">【如适用，请填写】</span><br>
-          联系地址：<span class="placeholder">【请填写注册地址或有效联系地址】</span>
-        </p>
-        <p>
-          我们将在收到您的请求并完成必要的身份核验后，在适用法律法规规定的期限内进行处理和回复。
-        </p>
-      </section>
+    <section class="card" id="s4">
+      <h2>四、我们如何使用 Cookie 和其他追踪技术</h2>
+      <p>为确保产品正常运转，我们会在您的计算机或移动设备上存储名为 Cookie 的小数据文件。 Cookie 通常包含标识符、产品名称以及一些号码和字符。 借助于 Cookie，我们能够存储您的偏好或商品等数据，并用以判断注册用户是否已经登录， 提升服务和产品质量及优化用户体验。 我们出于不同的目的使用各种Cookie，包括：严格必要型Cookie、性能Cookie、营销Cookie和功能Cookie。</p>
+<p>某些Cookie可能由外部第三方提供，以向我们的产品提供其它功能。 我们不会将 Cookie 用于本政策所述目的之外的任何用途。 您可根据自己的偏好管理或删除 Cookie。 您可以清除计算机上或手机中保存的所有 Cookie，大部分网络浏览器都设有阻止或禁用 Cookie 的功能， 您可对浏览器进行配置。</p>
+<p>阻止或禁用 Cookie 功能后，可能影响您使用或不能充分使用我们的产品和服务。</p>
+    </section>
     </main>
   </div>
 
-  <footer>
-    © 2026 Yuefu. Privacy Policy · 示例草稿
-  </footer>
-</body>
+  <footer>© 昆山元乐府科技有限公司 · 隐私政策</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
 </html>
