@@ -143,6 +143,14 @@
       max-width:1040px;
       margin:0 auto 24px;
       padding:0 20px;
+
+      display:grid;
+      grid-template-columns:255px minmax(0,1fr);
+      gap:26px;
+    }
+
+    .bottom-contact .contact {
+      grid-column:2;
     }
 
     .contact {
@@ -224,6 +232,7 @@
     }
 
     @media (max-width:820px) {
+
       .layout {
         grid-template-columns:1fr;
       }
@@ -239,6 +248,14 @@
       header {
         padding-top:44px;
       }
+
+      .bottom-contact {
+        grid-template-columns:1fr;
+      }
+
+      .bottom-contact .contact {
+        grid-column:1;
+      }
     }
   </style>
 </head>
@@ -247,6 +264,7 @@
 
   <header>
     <div class="inner">
+
       <div class="brand">
         Yuefu Translation App · Privacy Policy
       </div>
@@ -256,6 +274,7 @@
       <div class="subtitle">
         昆山元乐府科技有限公司
       </div>
+
     </div>
   </header>
 
@@ -263,6 +282,7 @@
   <div class="layout">
 
     <nav aria-label="目录">
+
       <strong>目录</strong>
 
       <a href="#intro">
@@ -284,6 +304,7 @@
       <a href="#s4">
         四、我们如何使用 Cookie 和其他追踪技术
       </a>
+
     </nav>
 
 
@@ -306,7 +327,7 @@
           一旦您选择使用，即视为您同意本隐私政策的全部内容，
           同意我们按其收集和使用您的相关信息。
           如您在阅读过程中，对本政策有任何疑问，可联系我们的客服咨询，
-          请通过zhyi_1@163.com或产品中的反馈方式与我们取得联系。
+          请通过 zhyi_1@163.com 或产品中的反馈方式与我们取得联系。
         </p>
 
         <p>
@@ -519,6 +540,7 @@
         aria-label="复制邮箱"
         title="复制邮箱"
       >
+
         <svg
           class="copy-icon"
           viewBox="0 0 24 24"
@@ -536,6 +558,7 @@
             d="M15 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h3"
           ></path>
         </svg>
+
       </button>
 
     </div>
